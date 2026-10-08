@@ -3,10 +3,10 @@
 **Tên:** Nguyễn Văn Duy
 **Khoá:** AI20K Cohort 4, Track 3
 **Tier đã chạy:** Colab T4
-**Ngày:** 2026-10-08
+**Ngày:** 08/10/2026
 
-> Mọi con số dưới đây lấy từ file do notebook sinh ra (`adapters/dpo/dpo_metrics.json`,
-> `data/eval/judge_summary.json`, `data/eval/benchmark_results.json`…), không ước lượng bằng mắt.
+> Số liệu lấy từ output notebook đã chạy, `adapters/dpo/dpo_metrics.json`,
+> `data/eval/judge_summary.json` và `submission/VERIFY-OUTPUT.txt`. Không ước lượng bằng mắt.
 
 ---
 
@@ -38,7 +38,7 @@ Tôi kiểm tra trực tiếp ba cặp đầu trong `data/pref/train.parquet`. C
 | Chỉ số | Giá trị |
 |---|---:|
 | Thời gian huấn luyện NB3 | 26 phút 45 giây cho 100 bước optimizer; chưa tính gần 9 phút precompute reference |
-| VRAM cao nhất | Notebook chưa ghi đỉnh VRAM theo từng bước; log T4 báo tổng khả dụng khoảng 14,56 GB. Không suy diễn đỉnh từ dung lượng máy. |
+| VRAM cao nhất | 11,07 GiB theo `torch.cuda.max_memory_allocated()` sau khi chạy NB0-NB4 trên cùng runtime T4 |
 | Reward gap cuối trên tập huấn luyện (chosen − rejected) | 0,0948 (chosen 0,3974; rejected 0,3026) |
 | Độ chính xác reward trên held-out | 0,70 trên 100 cặp |
 | Margin trên held-out | 0,0886 (chosen 0,4131; rejected 0,3244) |

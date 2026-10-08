@@ -1,0 +1,17 @@
+Run: Colab T4, 08/10/2026
+Command: python /content/lab22/scripts/verify.py (Makefile target: make verify)
+
+Peak CUDA allocated: 11.07 GiB
+==> Verifying submission at /content/lab22
+
+Optional (bonus):
+  · NB3b variants
+  · NB5 GGUF
+  · NB6 benchmark
+  · NB7 GRPO
+  · β-sweep
+
+✓ Core checks passed. Push your repo and paste the URL into the LMS.
+
+
+VERIFY_EXIT_CODE= 0
